@@ -7,7 +7,7 @@
  * Author URI:      https://fixonweb.com.br
  * Text Domain:     fixonweb-auto-include
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         0.1.1
  *
  * @package         Fixonweb_Auto_Include
  */
@@ -58,4 +58,14 @@ sort($dire);
 foreach ($dire as $key => $value) {
 	$extensao = substr($value, -4) ;
 	if($extensao=='.php') require_once($value);;
+}
+
+//== WP-MU ==============================
+$url = substr(get_bloginfo("url"), 32) ;
+$path_modules_wpmu = plugin_dir_path( __FILE__ )."add-in-mu/".$url;
+$dire = fix159839_load_modules($path_modules_wpmu);
+sort($dire);
+foreach ($dire as $key => $value) {
+    $extensao = substr($value, -4) ;
+    if($extensao=='.php') require_once($value);;
 }

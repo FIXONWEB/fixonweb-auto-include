@@ -1,5 +1,5 @@
 === fixonweb-auto-include ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: (fixonweb)
 Donate link: https://example.com/
 Tags: comments, spam
 Requires at least: 4.5
@@ -9,54 +9,21 @@ Stable tag: 0.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Carrega os arquivos .php postados no diretorio add-in.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
-
-A few notes about the sections above:
-
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+Instalar normalmente a partir do arquivo zipado baixado do github.
 
-e.g.
-
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Na prática, pra que serve mesmo esse plugin =
 
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+No dia-a-dia, prestando serviços de ajustes e implementação de sites wordpress, as vezes, acabamos por ter que desenvolver um monte de plugins sendo que cada um com um objetivo especifico seja de ajuste de layout ou adição de algum recurso tais como um cadastro ou emissão de relatorio. Usando esse plugin, basta adicionar cada arquivo .php na pasta add-in e assim teremos a facilitade de inserir cada recurso em arquivos diferente sem ter que estar criando cada plugin pra cada necessidade.
 
 == Screenshots ==
 
@@ -68,20 +35,18 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+= 0.1.0 =
+* Configurações basicas do plugin
+* Testes e liberação do plugin.
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+= 0.1.1 =
+* Adicionado a pasta "add-in-mu" para o modo multi-site onde cada subpasta "casa" com a url do sub-site. Sendo assim, podemos adicionar um ou mais recurso em um sub-site sem que o mesmo recurso esteja presente nos demais sites da rede wp.
 
 == Upgrade Notice ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+= 0.1.0 =
+Sem avisos de atualização no momento
 
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
 
 == Arbitrary section ==
 
