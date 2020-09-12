@@ -42,6 +42,9 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 = 0.1.1 =
 * Adicionado a pasta "add-in-mu" para o modo multi-site onde cada subpasta "casa" com a url do sub-site. Sendo assim, podemos adicionar um ou mais recurso em um sub-site sem que o mesmo recurso esteja presente nos demais sites da rede wp.
 
+= 0.1.2 =
+Corrigido duplicação de nomes de funções para evitar conflito com o nome de outra função em um outro plugin paralelo.
+
 == Upgrade Notice ==
 
 = 0.1.0 =
